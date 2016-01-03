@@ -1,0 +1,39 @@
+/*
+
+	jQuery Scroll Progress plugin
+
+	Add a custom progress bar to the page, showing the progress of the current page.
+
+	Version: 1.0
+
+	Created by Daniel Esquilas <desquilas@gmail.com>
+
+ */
+
+
+.jquery-scroll-progress-wrapper{
+
+	.full-bar{
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 5px;
+
+		background: #ffffff;
+
+
+		.progress-bar{
+
+			float: left;
+			width: 0%;
+			height: 100%;
+
+			background: #000000;
+
+		}
+
+	}
+
+}

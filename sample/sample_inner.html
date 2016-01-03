@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>ScrollProgress</title>
+		<link type="text/css" rel="stylesheet" href="../src/css/default-scroll-progress.css">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				font-family: Arial;
+			}
+			section{
+
+				width: 500px;
+				height: 200px;
+
+				margin: 80px auto;
+
+				color: #fff;
+
+				overflow: auto;
+
+				border: 1px solid #000000;
+
+			}
+
+			.long{
+
+				height: 5000px;
+				background: #FF0000;
+				padding: 20px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="long">
+				This is a very long div...
+			</div>
+		</section>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../src/js/jquery.scroll-progress.js"></script>
+		<script type="text/javascript">
+			(function(){
+				$('section').scrollProgress();
+			})();
+		</script>
+	</body>
+</html>

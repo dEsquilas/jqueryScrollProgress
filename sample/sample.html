@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>ScrollProgress</title>
+		<link type="text/css" rel="stylesheet" href="../src/css/default-scroll-progress.css">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				font-family: Arial;
+			}
+			section{
+				height: 5000px;
+				background: green;
+				color: #fff;
+
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			This is a very long page...
+		</section>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../src/js/jquery.scroll-progress.js"></script>
+		<script type="text/javascript">
+			(function(){
+				$(document).scrollProgress();
+			})();
+		</script>
+	</body>
+</html>
